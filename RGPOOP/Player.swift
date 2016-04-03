@@ -27,6 +27,11 @@ class Player : Character {
             return _inventory
     }
 
+    func addItemToInventory(item: String) {
+
+        _inventory.append(item)
+    }
+
     convenience init(name: String, startingHealthPower: Int, attackPower: Int) {
 
         self.init(startingHealthPower: startingHealthPower, attackPower: attackPower)
